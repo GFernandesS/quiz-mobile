@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="corBotao">#1ab6d9</color>
+    <color name="corFundo">#FFF652</color>
+    <color name="amareloPastelão">#fff694</color>
+    <color name="corMatematica">#A745B5</color>
+    <color name="corERRO">#fc0000</color>
+    <color name="corQuimica">#32b1e3</color>
+    <color name="corBio">#58e332</color>
+    <color name="corArte">#ab0a0a</color>
+    <color name="corHist">#fc8d05</color>
+</resources>

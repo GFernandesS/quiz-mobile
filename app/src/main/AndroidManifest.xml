@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.projetoquiz">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="QUIZ"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".mostrarjogadorestodos"></activity>
+        <activity android:name=".resultado" />
+        <activity android:name=".perguntas.perguntas.pergunta2_hist" />
+        <activity android:name=".perguntas.perguntas.pergunta1_hist" />
+        <activity android:name=".perguntas.perguntas.pergunta2_art" />
+        <activity android:name=".perguntas.perguntas.pergunta1_art" />
+        <activity android:name=".perguntas.perguntas.pergunta2_bio" />
+        <activity android:name=".perguntas.perguntas.pergunta2_quimica" />
+        <activity android:name=".perguntas.perguntas.pergunta1_quimica" />
+        <activity android:name=".perguntas.perguntas.pergunta2_mat" />
+        <activity android:name=".perguntas.perguntas.pergunta1_mat" />
+        <activity android:name=".telaNovoJogo" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

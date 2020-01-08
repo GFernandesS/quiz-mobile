@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".perguntas.perguntas.pergunta2_bio">
+
+
+    <ImageView
+        android:id="@+id/imgCorTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:src="@color/corBio" />
+
+    <TextView
+        android:id="@+id/lblTituloBio1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-black"
+        android:text="BIOLOGIA"
+        android:textSize="30dp" />
+
+
+    <Chronometer
+        android:id="@+id/contador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-black"
+        android:text="10"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/imgCronometro"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/contador"
+        app:srcCompat="@drawable/tempicon" />
+
+    <ImageView
+        android:id="@+id/imgFundo"
+        android:layout_width="364dp"
+        android:layout_height="302dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/fundobio" />
+
+    <ImageView
+        android:id="@+id/imgHomem"
+        android:layout_width="313dp"
+        android:layout_height="291dp"
+        android:layout_below="@id/imgCorTitulo"
+
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="6dp"
+
+
+        android:src="@drawable/imgbiodna" />
+
+
+    <TextView
+        android:id="@+id/lblTituloPerguntaBio2"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgFundo"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Quais são as bases nitrogenadas purinas?"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/btnR1Bio2"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblTituloPerguntaBio2"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:text="Guanina e Timina"
+        android:background="@drawable/customizado"
+        android:textAlignment="center"
+        android:onClick="onClickGT"/>
+
+    <Button
+        android:id="@+id/btnR2Bio2"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnR1Bio2"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:text="ADENINA E GUANINA"
+        android:background="@drawable/customizado"
+        android:onClick="onClickAG"/>
+
+    <Button
+        android:id="@+id/btnR3Bio2"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnR2Bio2"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:text="TIMINA E CITOSINA"
+        android:background="@drawable/customizado"
+        android:onClick="onClickTC"/>
+
+    <ImageView
+        android:id="@+id/iconmat"
+        android:layout_width="54dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/lblTituloBio1"
+        app:srcCompat="@drawable/iconbio" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/matematica"
+    tools:context=".perguntas.perguntas.pergunta2_mat">
+
+
+
+    <ImageView
+        android:id="@+id/imgCorTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:src="@color/corMatematica" />
+
+    <TextView
+        android:id="@+id/lblTituloMat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-black"
+        android:text="MATEMÁTICA"
+        android:textSize="30dp" />
+
+    <Chronometer
+        android:id="@+id/contador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-black"
+        android:text="10"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/imgCronometro"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/contador"
+        app:srcCompat="@drawable/tempicon" />
+
+    <ImageView
+        android:id="@+id/imgFundo"
+        android:layout_width="345dp"
+        android:layout_height="273dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/imgquadriculado" />
+
+    <ImageView
+        android:id="@+id/imgEscaleno"
+        android:layout_width="218dp"
+        android:layout_height="147dp"
+        android:layout_below="@id/imgCorTitulo"
+
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/imagemangulo" />
+
+
+    <TextView
+        android:id="@+id/lblTituloPerguntaMat2"
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgFundo"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Qual o valor de â na imagem?"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/btnR1Mat2"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblTituloPerguntaMat2"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:text="180°"
+        android:background="@drawable/customizado"
+        android:textAlignment="center"
+        android:onClick="onClickCentoOitenta"/>
+
+    <Button
+        android:id="@+id/btnR2Mat2"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnR1Mat2"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:text="74°"
+        android:background="@drawable/customizado"
+        android:onClick="onClickSetentaQuatro"/>
+
+    <Button
+        android:id="@+id/btnR3Mat2"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnR2Mat2"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:text="50°"
+        android:background="@drawable/customizado"
+        android:onClick="onClickCinquenta"/>
+
+    <ImageView
+        android:id="@+id/iconmat"
+        android:layout_width="44dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/lblTituloMat2"
+        app:srcCompat="@drawable/iconmat" />
+
+</RelativeLayout>

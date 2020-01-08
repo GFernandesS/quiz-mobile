@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".telaNovoJogo">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/lblUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgFundoAmarelo"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Jogador:"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:id="@+id/imgFundoAmarelo"
+            android:layout_width="match_parent"
+            android:layout_height="101dp"
+            app:srcCompat="@color/corFundo" />
+
+    <ImageView
+        android:id="@+id/imgTitulo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/imagemnovojogo"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="50dp" />
+
+        <EditText
+            android:id="@+id/txtJogador"
+            android:layout_width="271dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgFundoAmarelo"
+            android:layout_marginTop="38dp"
+            android:layout_toRightOf="@id/lblUsuario"
+            android:ems="10"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btnContinuar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Continuar"
+            android:background="@drawable/customizado"
+            android:layout_below="@id/lblUsuario"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="200dp"
+            android:onClick="onClickContinuar"
+            tools:ignore="NotSibling"
+            android:drawableRight="@drawable/imgplay"
+            android:paddingRight="10dp"/>
+
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:background="@drawable/customizado"
+            android:layout_below="@id/lblUsuario"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="10dp"
+            android:onClick="onClickCancelar"
+            tools:ignore="NotSibling"
+            android:drawableRight="@drawable/imgcancelar"
+            android:paddingRight="10dp"/>
+
+</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

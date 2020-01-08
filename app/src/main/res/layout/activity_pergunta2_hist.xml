@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".perguntas.perguntas.pergunta2_hist">
+
+
+    <ImageView
+        android:id="@+id/imgCorTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:src="@color/corHist" />
+
+    <TextView
+        android:id="@+id/lblTituloArt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-black"
+        android:text="HISTÓRIA"
+        android:textSize="30dp" />
+
+
+    <ImageView
+        android:id="@+id/iconmat"
+        android:layout_width="80dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/lblTituloArt1"
+        app:srcCompat="@drawable/iconhist" />
+
+
+    <Chronometer
+        android:id="@+id/contador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="245dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-black"
+        android:text="10"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/imgCronometro"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/contador"
+        app:srcCompat="@drawable/tempicon" />
+
+
+    <ImageView
+        android:id="@+id/imgFundo"
+        android:layout_width="345dp"
+        android:layout_height="302dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/fundohist" />
+
+    <ImageView
+        android:id="@+id/imgLua"
+        android:layout_width="291dp"
+        android:layout_height="193dp"
+        android:layout_below="@id/imgCorTitulo"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/imghist2" />
+
+    <TextView
+        android:id="@+id/lblTituloPerguntaHist2"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgFundo"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="-25dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Quem foi o líder do Brasil durante o Estado Novo?"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/btnR1Hist2"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblTituloPerguntaHist2"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:text="juscelino kubitschek"
+        android:background="@drawable/customizado"
+        android:textAlignment="center"
+        android:onClick="onClickP1"/>
+
+    <Button
+        android:id="@+id/btnR2Hist2"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnR1Hist2"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:text="Getúlio Vargas"
+        android:background="@drawable/customizado"
+        android:onClick="onClickP2"/>
+
+    <Button
+        android:id="@+id/btnR3Hist2"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnR2Hist2"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:text="José Bonifácio"
+        android:background="@drawable/customizado"
+        android:onClick="onClickP3"/>
+
+
+
+</RelativeLayout>

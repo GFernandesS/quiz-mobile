@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".perguntas.perguntas.pergunta1_quimica">
+
+
+    <ImageView
+        android:id="@+id/imgCorTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:src="@color/corQuimica" />
+
+    <TextView
+        android:id="@+id/lblTituloQui1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-black"
+        android:text="QUÍMICA"
+        android:textSize="30dp" />
+
+    <ImageView
+        android:id="@+id/iconmat"
+        android:layout_width="44dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@id/lblTituloQui1"
+        app:srcCompat="@drawable/iconqui" />
+
+    <Chronometer
+        android:id="@+id/contador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-black"
+        android:text="10"
+        android:textSize="30dp" />
+
+
+    <ImageView
+        android:id="@+id/imgCronometro"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/contador"
+        app:srcCompat="@drawable/tempicon" />
+
+    <ImageView
+        android:id="@+id/imgFundo"
+        android:layout_width="331dp"
+        android:layout_height="269dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/fundoquimica" />
+
+
+    <ImageView
+        android:id="@+id/imgLavoisier"
+        android:layout_width="218dp"
+        android:layout_height="147dp"
+        android:layout_below="@id/imgCorTitulo"
+        android:background="@drawable/fotocustomizada"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/lavoisier" />
+
+    <TextView
+        android:id="@+id/lblTituloPerguntaQui1"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgFundo"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="-10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Príncipio universal de conservação de energia.
+        Quem postulou?"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/btnR1Qui1"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblTituloPerguntaQui1"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:text="Jöns Jacob Berzelius"
+        android:background="@drawable/customizado"
+        android:textAlignment="center"
+        android:onClick="onClickBerzelius"/>
+
+    <Button
+        android:id="@+id/btnR2Qui1"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnR1Qui1"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:text=" john dalton"
+        android:background="@drawable/customizado"
+        android:onClick="onClickDalton"/>
+
+    <Button
+        android:id="@+id/btnR3Qui1"
+        android:layout_width="306dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnR2Qui1"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:text="antoine lavoisier"
+        android:background="@drawable/customizado"
+        android:onClick="onClickLavoisier"/>
+
+
+
+
+
+
+</RelativeLayout>
